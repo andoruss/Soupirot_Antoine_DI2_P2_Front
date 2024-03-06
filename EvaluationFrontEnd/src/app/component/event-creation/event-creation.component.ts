@@ -3,6 +3,7 @@ import { EventService } from '../../core/services/event/event.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Events } from '../../shared/model/event';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-event-creation',

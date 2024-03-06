@@ -34,4 +34,14 @@ loadEvents(){
   });
 }
 
+delete(id: string){
+  const eventsIndex = this.events.findIndex((obj) => obj.id === id);
+  if (eventsIndex > -1) {
+    this.events.splice(eventsIndex, 1);
+  }
+  this.eventService.deleteEvent(id);
+}
+
+
+
 }

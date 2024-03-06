@@ -20,7 +20,7 @@ export class EventService {
         return this.apiService.put<Events>("UpdateEvent", event);
     }
 
-    deleteEvent(event: Events): Observable<Events> {
+    deleteEvent(id: string): Observable<Events> {
         return this.apiService.delete<Events>("DeleteEvent", event);
     }
 }
