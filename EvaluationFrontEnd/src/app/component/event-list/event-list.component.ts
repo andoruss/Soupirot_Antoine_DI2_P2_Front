@@ -42,6 +42,8 @@ delete(id: string){
   this.eventService.deleteEvent(id);
 }
 
-
+updateEvent(){
+  
+}
 
 }
